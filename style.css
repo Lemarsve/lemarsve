@@ -452,7 +452,7 @@ h6, .h6 {
 
 @media (max-width: 1200px) {
   .display-3 {
-    font-size: calc(1.575rem + 3.9vw) ;
+    font-size: calc(0.5rem + 2vw) ;
   }
 }
 
