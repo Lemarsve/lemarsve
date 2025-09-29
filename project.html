@@ -20,12 +20,10 @@
     .portfolio-container {
         display: flex;
         flex-wrap: wrap;
-        margin: -15px; /* Compensa los márgenes de los ítems */
+        gap: 20px; /* Espacio horizontal y vertical entre ítems */
     }
     .portfolio-item {
-        padding: 0; /* Quitamos el padding interno para que no deforme */
-        margin: 15px; /* Espaciado uniforme en todas las direcciones */
-        flex: 0 0 calc(33.333% - 30px); /* 3 por fila con margen incluido */
+        flex: 0 0 calc(33.333% - 20px); /* 3 columnas exactas con gap */
         box-sizing: border-box;
     }
     .portfolio-img img {
@@ -38,6 +36,8 @@
         padding: 18px 12px;
     }
 </style>
+
+    
 
 </head>
 
