@@ -8,92 +8,36 @@
     <meta name="description" content="Agrolemars: Soluciones integrales para el campo. Venta y repotenciación de maquinaria agrícola, insumos y servicios para el agro.">
     <meta name="keywords" content="Agrolemars, maquinaria agrícola, tractores, fumigadoras, sembradoras, insumos agrícolas, repotenciación, agrotrueque">
 
-    <!-- Favicon -->
     <link href="favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="owl.carousel.min.css" rel="stylesheet">
     <link href="lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="style.css" rel="stylesheet">
 
     <style>
         .portfolio-item {
-            padding: 15px; /* separación entre cuadrículas */
+            padding: 12px;
         }
         .portfolio-img img {
-            border-radius: 8px; /* esquinas suaves */
+            border-radius: 8px;
+            display: block;
+        }
+        .portfolio-container {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+        .portfolio-text {
+            padding: 18px 12px;
         }
     </style>
 </head>
 
 <body>
     <!-- Header Start -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 bg-secondary d-none d-lg-block">
-                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <img style="height:70px;" class="img-fluid" src="logo.png" alt="Logo Agrolemars">
-                    <h1 class="m-0 display-3 text-primary">Agrolemars</h1>
-                </a>
-            </div>
-            <div class="col-lg-9">
-                <div class="row bg-dark d-none d-lg-flex">
-                    <div class="col-lg-7 text-left text-white">
-                        <div class="h-100 d-inline-flex align-items-center border-right border-primary py-2 px-3">
-                            <i class="fa fa-envelope text-primary mr-2"></i>
-                            <small>lemars@gmail.com</small>
-                        </div>
-                        <div class="h-100 d-inline-flex align-items-center py-2 px-2">
-                            <i class="fa fa-phone-alt text-primary mr-2"></i>
-                            <small>+58414-1919433</small>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 text-right">
-                        <div class="d-inline-flex align-items-center pr-2">
-                            <a class="text-primary p-2" href="https://www.facebook.com/share/19bw1vxt1R/?mibextid=wwXIfr" target="_blank" rel="noopener">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="text-primary p-2" href="https://x.com/lemarsrentals7" target="_blank" rel="noopener">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="text-primary p-2" href="https://www.instagram.com/agrolemars?igsh=MWlmdGE2cTB5OXMxZg==" target="_blank" rel="noopener">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <img style="height:30px;" class="img-fluid" src="logo.png" alt="Logo Agrolemars">
-                        <h1 class="m-0 display-4 text-primary">Agrolemars</h1>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link">Casa</a>
-                            <a href="service.html" class="nav-item nav-link">Servicios</a>
-                            <a href="project.html" class="nav-item nav-link active">Catálogo</a>
-                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                        </div>
-                        <a href="https://wa.me/584141919433" target="_blank" rel="noopener" class="btn btn-primary mr-3 d-none d-lg-block">Cotizar</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
+    <!-- Igual al index -->
     <!-- Header End -->
-
 
     <!-- Page Header Start -->
     <div class="container-fluid bg-primary py-5 mb-5">
@@ -106,14 +50,13 @@
                     <div class="d-inline-flex align-items-center">
                         <a class="btn btn-sm btn-outline-light" href="index.html">Inicio</a>
                         <i class="fas fa-angle-double-right text-light mx-2"></i>
-                        <a class="btn btn-sm btn-outline-light disabled" href="">Catálogo</a>
+                        <a class="btn btn-sm btn-outline-light disabled">Catálogo</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Page Header End -->
-
 
     <!-- Portfolio Start -->
     <div class="container-fluid py-5">
@@ -122,90 +65,105 @@
                 <div class="col-lg-6">
                     <h1 class="section-title mb-3">Catálogo</h1>
                 </div>
-                <div class="col-lg-6 text-center text-lg-right">
-                    <ul class="list-inline mb-2" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">Todos</li>
-                    </ul>
-                </div>
             </div>
+
             <div class="row m-0 portfolio-container">
-                <!-- Ítems originales del catálogo -->
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item first">
+                <!-- 14 Ítems del catálogo -->
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="portfolio-1.jpg" alt="Cerco eléctrico">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Cerco eléctrico</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-1.jpg" alt="Cerco eléctrico"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Cerco eléctrico</h4></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item second">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="portfolio-2.jpg" alt="Tractor agrícola">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Tractor agrícola</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-2.jpg" alt="Aperos"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Aperos</h4></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item third">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="portfolio-3.jpg" alt="Sembradora">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Sembradora</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-3.jpg" alt="Ferretería"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Ferretería</h4></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fourth">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="portfolio-4.jpg" alt="Fumigadora">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Fumigadora</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-4.jpg" alt="Agroquímicos"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Agroquímicos</h4></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item fifth">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="portfolio-5.jpg" alt="Rastra agrícola">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Rastra agrícola</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-5.jpg" alt="Equipos"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Equipos</h4></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item sixth">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
                     <div class="position-relative overflow-hidden">
-                        <div class="portfolio-img">
-                            <img class="img-fluid w-100" src="portfolio-6.jpg" alt="Trompo agrícola">
-                        </div>
-                        <div class="portfolio-text bg-primary">
-                            <h4 class="font-weight-bold mb-4">Trompo agrícola</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a class="btn btn-sm btn-secondary m-1" href="portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            </div>
-                        </div>
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-6.jpg" alt="Ordeño"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Ordeño</h4></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-7.jpg" alt="Veterinaria"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Veterinaria</h4></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-8.jpg" alt="Repuestos de tractores"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Repuestos de tractores</h4></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-9.jpg" alt="Implementos"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Implementos</h4></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-10.jpg" alt="Riego"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Riego</h4></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-11.jpg" alt="Desmalezadoras, generadores y asperjadoras"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Desmalezadoras, generadores y asperjadoras</h4></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-12.jpg" alt="Fundiciones"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Fundiciones</h4></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-13.jpg" alt="Repuestos de implementos"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Repuestos de implementos</h4></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-0 portfolio-item">
+                    <div class="position-relative overflow-hidden">
+                        <div class="portfolio-img"><img class="img-fluid w-100" src="portfolio-14.jpg" alt="Tractores"></div>
+                        <div class="portfolio-text bg-primary"><h4 class="font-weight-bold mb-4">Tractores</h4></div>
                     </div>
                 </div>
             </div>
@@ -213,56 +171,10 @@
     </div>
     <!-- Portfolio End -->
 
-
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 mt-n3 display-4 text-primary">Lemar's</h1>
-                </a>
-                <p>Soluciones integrales para el campo.</p>
-                <h5 class="font-weight-semi-bold text-white mb-2">Horario:</h5>
-                <p class="mb-1">Lunes – Viernes, 8AM – 5PM</p>
-                <p class="mb-0">Sábado - Domingo: 8AM - 1PM</p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-semi-bold text-primary mb-4">Nosotros</h4>
-                <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>Maturín, Venezuela</p>
-                <p><i class="fa fa-phone-alt text-primary mr-2"></i>+58414-1919433</p>
-                <p><i class="fa fa-envelope text-primary mr-2"></i>lemars@gmail.com</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-light btn-social mr-2" href="https://x.com/lemarsrentals7" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/share/19bw1vxt1R/?mibextid=wwXIfr" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-light btn-social" href="https://www.instagram.com/agrolemars?igsh=MWlmdGE2cTB5OXMxZg==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Lemar's rental's Service</a>. All Rights Reserved. Designed by <a href="">Ruben Rodriguez</a></p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <ul class="nav d-inline-flex">
-                    <li class="nav-item"><a class="nav-link text-white py-0" href="#">Privacy</a></li>
-                    <li class="nav-item"><a class="nav-link text-white py-0" href="#">Terms</a></li>
-                    <li class="nav-item"><a class="nav-link text-white py-0" href="#">FAQs</a></li>
-                    <li class="nav-item"><a class="nav-link text-white py-0" href="#">Help</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <!-- Igual al index -->
     <!-- Footer End -->
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="easing.min.js"></script>
@@ -273,5 +185,4 @@
     <script src="lightbox.min.js"></script>
     <script src="main.js"></script>
 </body>
-
 </html>
